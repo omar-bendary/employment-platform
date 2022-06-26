@@ -4,7 +4,7 @@
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install packages.
 
-To create a virtual environment
+# To create a virtual environment
 1- Open the project folder 
 2- Run this command
 ```bash
@@ -15,16 +15,13 @@ To create a virtual environment
 # macOS
 % python3 -m venv .venv
 ```
-Here is what the full commands look like to create and activate a new virtual environment called .venv:
+Here activate a new virtual environment called .venv:
 ```bash
 # Windows
-> python -m venv .venv
-> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 > .venv\Scripts\Activate.ps1
 (.venv) >
 
 # macOS
-% python3 -m venv .venv
 % source .venv/bin/activate
 (.venv) %
 ```
