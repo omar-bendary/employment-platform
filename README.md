@@ -2,6 +2,11 @@
 
 ## Installation
 
+make a new folder for the project and open this folder in the Terminal/Windows (PowerShell) and run this command
+```bash
+git clone https://github.com/omar-bendary/employment-platform.git
+```
+
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install packages.
 
 ## To create a virtual environment
