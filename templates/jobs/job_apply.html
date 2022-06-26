@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <!-- bradcam_area  -->
+    <div class="bradcam_area bradcam_bg_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text">
+                        <h3>Apply for the job</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="col-md-6">
+<h5>  Tell us a summery about you and why should we hire you.</h5>
+
+<form action="" method="post">{% csrf_token %}
+    {{ form|crispy }}
+<input type="submit" value="Apply">
+</form>
+</div>
+<br>
+<br>
+
+{% endblock content %}

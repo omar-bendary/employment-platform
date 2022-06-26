@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load hitcount_tags %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <!-- bradcam_area  -->
+    <div class="bradcam_area bradcam_bg_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text">
+                        <h3>Profiles List</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="col-md-6">
+{% for profile in profile_list %}
+<h4>Profile : <a href="{% url 'profile_detail' profile.pk %}">
+    {{profile.employee.username}}   </h4>
+ </a>
+ <h5>Number of Profile Views: {% get_hit_count for profile %}</h5>
+ <br>
+{% endfor%}
+
+</div>
+<br>
+<br>
+
+{% endblock content %}

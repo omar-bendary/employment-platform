@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% block content %}
+    <!-- bradcam_area  -->
+    <div class="bradcam_area bradcam_bg_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text">
+                        <h3>Hi {{user.username}}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ bradcam_area  -->
+
+    <div class="job_details_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="job_details_header">
+                        <div class="single_jobs white-bg d-flex justify-content-between">
+                            <div class="jobs_left d-flex align-items-center">
+                               
+                                <div class="jobs_conetent">
+                                    <a href="{% url 'profile' %}"><h4>{{user.username}} Profile</h4></a>
+                                    <div class="links_locat d-flex align-items-center">
+                                        <div class="location">
+                                            <p> <i class="fa fa-map-marker"></i> {{user.city}}</p>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="jobs_right">
+                                <div class="apply_now">
+                                   </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="descript_wrap white-bg">
+                        <div class="single_wrap">
+                            {% comment %} <h4>Number of Profile Views : <p>{{% get_hit_count for user.profile %}}</p></h4> {% endcomment %}
+                           
+                          
+                        </div>
+                        <div class="single_wrap">
+                            <h4>Bio</h4>
+                            <p>{{user.bio}}</p>
+                          
+                        </div>
+                        <div class="single_wrap">
+                            <h4>experience_level</h4>
+                            <p>{{user.experience_level}}</p>
+                          
+                        </div>
+                        <div class="single_wrap">
+                            <h4>programming_languages</h4>
+                                {% for tag in user.programming_languages.all %}
+                                    <p> {{ tag.name }}</p>
+                                {% endfor %}
+                            
+                            
+                            
+                        </div>
+                  
+                    
+                    </div>
+
+                
+            
+                 
+
+                </div>
+                <div class="col-lg-4">
+                    <div class="job_sumary">
+                      
+                       
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
