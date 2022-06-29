@@ -61,4 +61,23 @@ pip install -r requirements.txt
 # macOS
 (.venv) % python3 manage.py runserver
 ```
+
+## Set up your RDBMS , open your setting.py
+```bash
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'DB_NAME',
+        'USER': 'DB_USER',
+        'PASSWORD': 'DB_PASSWORD',
+        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+        'PORT': '3306',
+    }
+}
+```
+
+
 ## open http://127.0.0.1:8000/ in your web browser
+
+
+
