@@ -4,13 +4,20 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "==3.1"
 django-taggit = "*"
 django-hitcount = "*"
 django-crispy-forms = "==1.9.2"
 django-boost = "*"
 django-annoying = "*"
 django-filter = "*"
+django = "==3.2"
+graphviz = "*"
+pygraphviz = "*"
+pyparsing = "*"
+pydot = "*"
+django-extensions = "*"
+whitenoise = "==5.1.0"
+gunicorn = "==19.9.0"
 
 [dev-packages]
 autopep8 = "*"
