@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "80d28f5346ea05c85a2b6dfff31781ffff259b8fd2b55048e2014d03ed4d2c68"
+            "sha256": "401e47f8c19bc43844a07d1078ee8165730ad99b5ed946e7193c3e44d223b949"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -95,14 +95,6 @@
             "index": "pypi",
             "version": "==3.0.0"
         },
-        "graphviz": {
-            "hashes": [
-                "sha256:62c5f48bcc534a45b4588c548ff75e419c1f1f3a33d31a91796ae80a7f581e4a",
-                "sha256:76bdfb73f42e72564ffe9c7299482f9d72f8e6cb8d54bce7b48ab323755e9ba5"
-            ],
-            "index": "pypi",
-            "version": "==0.20"
-        },
         "gunicorn": {
             "hashes": [
                 "sha256:aa8e0b40b4157b36a5df5e599f45c9c76d6af43845ba3b3b0efe2c70473c2471",
@@ -118,13 +110,6 @@
             ],
             "index": "pypi",
             "version": "==1.4.2"
-        },
-        "pygraphviz": {
-            "hashes": [
-                "sha256:fa18f7c6cea28341a4e466ed0cf05682b0a68288afe8dd7c9426782f7c1ae01c"
-            ],
-            "index": "pypi",
-            "version": "==1.9"
         },
         "pyparsing": {
             "hashes": [
